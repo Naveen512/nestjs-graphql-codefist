@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CowBreed {
+  id: Int!
+  name: String!
+  maxYield: Int
+  minYield: Int
+  state: String
+  country: String
+  Description: String
+}
+
+type Query {
+  getAllCows: [CowBreed!]!
+  getCowById(id: Int!): CowBreed!
+}
+
+type Mutation {
+  addCow(newCow: CowBreedInput!): CowBreed!
+}
+
+input CowBreedInput {
+  id: Int!
+  name: String!
+  maxYield: Int
+  minYield: Int
+  state: String
+  country: String
+  Description: String
+}
